@@ -1,0 +1,105 @@
+.recipecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100vh;
+  background-color: #666a86;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23666A86' width='11' height='11'/%3E%3Crect fill='%23696c88' x='10' width='11' height='11'/%3E%3Crect fill='%236c6d89' y='10' width='11' height='11'/%3E%3Crect fill='%236f6f8b' x='20' width='11' height='11'/%3E%3Crect fill='%2372718c' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%2375738e' y='20' width='11' height='11'/%3E%3Crect fill='%23787490' x='30' width='11' height='11'/%3E%3Crect fill='%237b7691' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%237e7893' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23817a94' y='30' width='11' height='11'/%3E%3Crect fill='%23847b96' x='40' width='11' height='11'/%3E%3Crect fill='%23867d97' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23897f99' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%238c819a' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%238f839c' y='40' width='11' height='11'/%3E%3Crect fill='%2392859d' x='50' width='11' height='11'/%3E%3Crect fill='%2395869f' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%239788a0' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%239a8aa2' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%239d8ca3' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23a08ea5' y='50' width='11' height='11'/%3E%3Crect fill='%23a290a6' x='60' width='11' height='11'/%3E%3Crect fill='%23a592a8' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23a894a9' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23ab96aa' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23ad98ac' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23b09aad' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23b29caf' x='70' width='11' height='11'/%3E%3Crect fill='%23b59eb0' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23b8a0b2' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23baa2b3' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23bda4b5' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23bfa6b6' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23c2a8b8' x='80' width='11' height='11'/%3E%3Crect fill='%23c4aab9' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23c7acbb' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23c9aebc' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23ccb0be' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23ceb3bf' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23d0b5c1' x='90' width='11' height='11'/%3E%3Crect fill='%23d3b7c2' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23d5b9c4' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23d8bbc5' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23dabdc7' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23dcc0c9' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23dfc2ca' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23e1c4cc' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23e3c6cd' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23e5c9cf' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23e8cbd1' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23eacdd2' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23eccfd4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23eed2d6' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23f0d4d7' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23f2d6d9' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23f5d9db' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23f7dbdd' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23f9ddde' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23fbe0e0' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23FDE2E2' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.css-gkv3fg {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 5px rgb(78, 78, 78);
+  padding: 5px;
+}
+
+.containerrecipebox {
+  display: grid;
+  width: 80%;
+  max-width: 100%;
+  height: 90%;
+  grid-template-areas:
+    "article-1 a-Rl5RG-0"
+    "article-7 article-7";
+  grid-template-columns: 597px 1fr;
+  grid-template-rows: 447px 1fr;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 5px rgb(78, 78, 78);
+  padding: 45px;
+  overflow-y: auto;
+  margin: 15px;
+}
+.containerrecipebox:hover {
+  background-color: #353746;
+  border: solid 5px rgb(0, 0, 0);
+  color: white;
+}
+
+.article-1 {
+  grid-area: article-1;
+  overflow: hidden;
+  padding: 5px;
+}
+.a-Rl5RG-0 {
+  padding: 20px;
+  font-family: "Vidaloka", serif;
+  grid-area: a-Rl5RG-0;
+}
+
+.a-Rl5RG-0 > div {
+  margin: 10px;
+}
+.article-7 {
+  font-family: "Rajdhani", sans-serif;
+  grid-area: article-7;
+}
+
+@media screen and (max-width: 768px) {
+  .recipecontainer h1 {
+    margin-top: 130px;
+    font-size: 3em;
+  }
+  .containerrecipebox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  .css-gkv3fg {
+    padding: 0%;
+    margin: 0px;
+  }
+  .article-1 {
+    padding: 0px;
+    overflow: auto;
+    width: 100%;
+    
+  }
+  .article-1 img {
+    width: 50%;
+    height: auto;
+    position: sticky;
+    top: 0%;
+    right: 0px;
+  }
+  .a-Rl5RG-0 {
+    padding: 0px;
+  }
+
+  .a-Rl5RG-0 > div {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  .a-Rl5RG-0 > div h4 {
+    margin: 0px;
+    font-size: 15px;
+  }
+}

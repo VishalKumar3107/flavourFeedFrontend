@@ -1,0 +1,228 @@
+.recipedisplaycontainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.recipedisplaycontainer h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 6vw;
+  line-height: 1;
+  color: #ffeba7;
+  text-align: center;
+  margin-bottom: -90px;
+  -webkit-text-stroke: 2px #353746;
+  text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+}
+
+.map-container {
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  width: 75%;
+  height: 600px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.cardrecipe {
+  margin: 10px;
+  padding-top: 5px;
+  border: 1px solid black;
+  min-width: 270px;
+  height: 370px;
+  background: #ffe5f4;
+/* transition: transform 0.3s ease-in-out; */
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .cardrecipe:hover{
+  transform: translateY(-15px);
+} */
+.cardrecipe span {
+  font-weight: bold;
+  color: #353746;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.cardrecipe .namecontent .inforecipes {
+  font-weight: 400;
+  color: #353746;
+  display: block;
+  height: 150px;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 1em;
+}
+
+.cardrecipe .img img {
+  width: 7.5em;
+  height: 7.5em;
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.namecontent{
+  height: 7.5em;
+}
+
+.cardrecipe .share {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  color: #353746;
+  height: 1.5em;
+}
+
+.cardrecipe a {
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+.cardrecipe a:hover {
+  color: red;
+}
+
+.cardrecipe button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 24px;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease-in-out;
+}
+
+.cardrecipe button:hover:not([disabled]) {
+  color: red;
+}
+
+.cardrecipe button[disabled] {
+  color: red;
+}
+
+
+.buttonoptions{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+
+/* For devices with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .recipedisplaycontainer {
+    height: auto;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .recipedisplaycontainer h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardrecipe {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .cardrecipe .namecontent .inforecipes {
+    height: auto;
+  }
+
+  .cardrecipe .img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For devices with a minimum width of 769px and a maximum width of 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .recipedisplaycontainer {
+    height: auto;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  .recipedisplaycontainer h1 {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+  }
+
+  .map-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .cardrecipe {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .cardrecipe .namecontent .inforecipes {
+    height: auto;
+  }
+
+  .cardrecipe .img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For devices with a minimum width of 1025px */
+@media only screen and (max-width: 1025px) {
+  .map-container {
+    overflow-x: hidden;
+    height: 500px;
+  }
+
+  .cardrecipe {
+    margin: 10px;
+    width: 25%;
+    height: 380px;
+  }
+
+  .cardrecipe .namecontent .inforecipes {
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cardrecipe .img img {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fd985e;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23FD985E' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f98f63' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f38668' cx='50' cy='100' r='50'/%3E%3Cg fill='%23ec7f6c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e47871' cx='50' cy='200' r='50'/%3E%3Cg fill='%23db7174' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d16c77' cx='50' cy='300' r='50'/%3E%3Cg fill='%23c6677a' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bb637b' cx='50' cy='400' r='50'/%3E%3Cg fill='%23ae5f7c' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a25c7b' cx='50' cy='500' r='50'/%3E%3Cg fill='%2395587a' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23885577' cx='50' cy='600' r='50'/%3E%3Cg fill='%237c5274' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23704f70' cx='50' cy='700' r='50'/%3E%3Cg fill='%23644b6b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23584865' cx='50' cy='800' r='50'/%3E%3Cg fill='%234e445e' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23454056' cx='50' cy='900' r='50'/%3E%3Cg fill='%233c3c4e' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23353746' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  flex-direction: column;
+}
+
+.profileContainer h1 {
+  font-size: 3.5em;
+}
+
+.profilebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 90%;
+}
+
+@media (max-width: 768px){
+  .profilebox{
+    flex-direction: column;
+  }
+  .profileContainer{
+    height: auto;
+    padding-top: 100px;
+    gap: 10px;
+  }
+  .profileContainer h1{
+    font-size: 2em;
+  }
+  .displaytext{
+    padding-top: 50px;
+    width: 100%;
+  }
+  .displayimage{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.displayimage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 30%;
+  height: 90%;
+  border-radius: 45px;
+  /* background-color: rgb(77, 77, 77); */
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.displayimage img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.displaytext {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  border-radius: 45px;
+  flex-basis: 65%;
+  /* background-color: rgb(190, 110, 110); */
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-left: 10px;
+  height: 90%;
+}
+
+.displaytext h2{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.userrecipecontainer {
+    position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #000;
+  margin: 10px;
+}
+
+.userrecipecontainer button{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.carduserrecipe {
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+}
+
+.carduserrecipe .carduserrecipetitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.carduserrecipe .carduserrecipeprice {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.carduserrecipeimage {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.carduserrecipeimage img{
+    width:100%;
+    height:150px
+}

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Harmattan&display=swap");
+
+/* Desktop styles */
+.Herocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Aboreto", cursive;
+}
+
+.herobox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1550px;
+  height: 80%;
+  border: 1px solid black;
+}
+
+.boxleft {
+  flex-basis: 55%;
+  margin-left: 20px;
+}
+
+.boxleftcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  height: 400px;
+  position: relative;
+}
+
+.titleleftone {
+  font-size: 50px;
+}
+
+.titlelefttwo {
+  font-size: 35px;
+}
+
+.titleleftthree {
+  font-family: "Harmattan", sans-serif;
+  font-size: 20px;
+}
+
+.boxright {
+  flex-basis: 45%;
+}
+
+/* Tablet styles */
+
+
+.inputsearchhero {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  margin-top: 50px;
+  background-color: #f0d6ae;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 40%;
+  width: 60%;
+  /* max-width: 300px; */
+  height: 50px;
+  line-height: 30px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transition: background-color 0.3s ease-in-out;
+  /* direction: rtl; */
+  text-align: left;
+}
+
+.suggestionsearch {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  margin-left: 40%;
+  z-index: 2;
+  width: 60%; /* same width as search bar */
+  max-height: 300px;
+  overflow-y: auto; /* add scrollbar if content exceeds max-height */
+  background-color: #f0d6ae;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 12px 0px 28px, rgba(0, 0, 0, 0.1) 2px 0px 4px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f7e7d1;
+}
+
+.inputsearchhero:focus {
+  background-color: #eaeaea;
+}
+
+.inputsearchhero:disabled {
+  background-color: #dadada;
+  color: #a3a3a3;
+}
+
+.inputsearchhero:read-only {
+  background-color: #f4f4f4;
+  color: #a3a3a3;
+  cursor: not-allowed;
+}
+
+
+@media (min-width: 576px) and (max-width: 992px) {
+  /* Styles for medium screens go here */
+}
+
+@media screen and (max-width: 1024px) {
+  .Herocontainer {
+height: auto;
+  }
+  
+  .herobox {
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .boxleft {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .boxright {
+    flex-basis: 100%;
+  }
+
+  .titleleftone {
+    font-size: 40px;
+  }
+
+  .titlelefttwo {
+    font-size: 30px;
+  }
+
+  .titleleftthree  {
+    font-size: 18px;
+    max-width: 80%;
+  }
+  .boxleftcontainer{
+    padding: 20px;
+    align-items: center;
+  }
+
+  .containerSlides{
+    padding-bottom: 30px;
+  }
+  
+.inputsearchhero {
+  position: relative;
+  bottom: -10px;
+  right: 0;
+  margin-top: 0px;
+  margin-left: 0%;
+  font-size: 14px;
+  padding: 5px;
+  width: 80%;
+}
+
+.suggestionsearch {
+  position: relative;
+  bottom: -10px;
+  margin-left: 0%;
+  width: 80%;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .Herocontainer {
+    padding: 10px;
+  }
+
+  .herobox {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .boxleftcontainer {
+    height: auto;
+    padding: 0px;
+  }
+
+  .titleleftone {
+    font-size: 22px;
+  }
+
+  .titlelefttwo {
+    font-size: 25px;
+  }
+
+  .titleleftthree {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .titlelefttwo{
+    font-size: 22px;
+    text-align: center;
+  }
+  .containerSlides{
+    padding: 20px;
+  }
+}

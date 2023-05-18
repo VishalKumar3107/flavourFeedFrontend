@@ -1,0 +1,24 @@
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .slide {
+    height: 300px;
+  }
+}

@@ -1,0 +1,276 @@
+.trendingcontainer {
+  height: 100vh;
+  min-height: auto;
+}
+
+.trendingcontainer h1 {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  font-weight: 800;
+  font-size: 4vw;
+  line-height: 1;
+  color: #ffeba7;
+  text-align: start;
+  -webkit-text-stroke: 2px #353746;
+  text-stroke: 2px #ffeba7;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  color: transparent;
+}
+
+.trendingbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: auto;
+  width: 100%;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  width: 1350px;
+  max-width: 100%;
+}
+
+.servicerow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffe5f4;
+  border-bottom-right-radius: 28px;
+  justify-content: space-between;
+}
+
+.servicess {
+  flex-basis: 24%;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  border-radius: 18px;
+  border: 1px solid black;
+}
+
+.servicess:hover {
+  background-color: #ffe5f4;
+}
+
+.servicess img {
+  width: 80px;
+}
+
+.sevicetitle {
+  font-family: "Aboreto", cursive;
+  font-size: 18px;
+}
+
+.sevicedescription {
+  font-family: "Harmattan", sans-serif;
+  height: 30%;
+  overflow: hidden;
+}
+
+.trendingrecipes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+  padding: 30px;
+}
+.reciperowone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.cardone {
+  --bg: transparent;
+  --hover-bg: #ffe5f4;
+  --hover-text: #e50087;
+  max-width: 23ch;
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+  background: var(--bg);
+  padding: 0.8em;
+  /* padding-block: 1.8em; */
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0em;
+}
+
+.icon img {
+  width: 170px;
+  height: 170px;
+  /* size: cover; */
+}
+
+.cardone__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.cardone > :not(span) {
+  transition: 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.cardonelogin > strong {
+  display: block;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  padding: 10px;
+  letter-spacing: -0.035em;
+  border: 1px solid black;
+}
+
+.cardone span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hover-text);
+  border-radius: 5px;
+  font-weight: bold;
+  top: 100%;
+  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+}
+
+.cardone:hover span {
+  top: 0;
+  font-size: 1.2em;
+}
+
+.cardone:hover {
+  background: var(--hover-bg);
+}
+
+.cardone:hover > div,
+.cardone:hover > strong {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .trendingcontainer{
+    height: auto;
+  }
+
+  .trendingbox{
+    height: auto;
+  }
+
+  .services{
+    height: auto;
+  }
+
+  .servicerow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: #ffe5f4;
+    border-bottom-right-radius: 15px;
+    justify-content: space-between;
+  }
+
+  .servicess {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    height: 170px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .servicess img {
+    width: 40px;
+  }
+
+  .sevicetitle {
+    font-size: 14px;
+  }
+
+  .sevicetitle {
+    font-size: 12px;
+  }
+
+  .sevicedescription {
+    height: 40%;
+    overflow: hidden;
+    line-height: 15px;
+  }
+
+  .services h1 {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 2.4em;
+  }
+
+  .trendingrecipes {
+    gap: 5px;
+    padding: 10px;
+  }
+  .reciperowone {
+    gap: 5px;
+  }
+
+  .cardone {
+    padding: 0em;
+    border-radius: 5px;
+    gap: 0em;
+  }
+
+  .icon img {
+    width: 170px;
+    height: 100px;
+    /* size: cover; */
+  }
+
+  .cardone__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+
+
+  .cardonelogin > strong {
+    display: none;
+  }
+
+  .cardone span {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+  }
+
+  .cardone:hover span {
+    text-align: center;
+    font-size: .8em;
+  }
+}

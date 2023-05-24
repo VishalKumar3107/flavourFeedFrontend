@@ -1,0 +1,18 @@
+.aboutslideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .aboutslideshowSlider {
+    white-space: nowrap;
+    transition: ease 1500ms;
+  }
+  
+  .slideA {
+    display: inline-block;
+    height: 530px;
+    width: 100%;
+  }
+  
+  
